@@ -1,0 +1,449 @@
+/*
+FLAT UI Flavored Adminer Theme by me
+Screenshot : https://github.com/minhnv2306/adminer_theme/blob/main/images/adminer_pink_theme.png
+Based on work by : uunnb
+*/
+
+@import url(//fonts.googleapis.com/css?family=Roboto:400,700|Inconsolata);
+* {
+    font: 13px/1.7 "Roboto", "Proxima Nova Rg", "Source Sans Pro", "Droid Sans", Arial, Helvetica, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff3f6;
+}
+
+tbody,
+.footer>div {
+    background-color: #ddf2ff;
+}
+
+.links>a,
+#form a {
+    color: #6a4739;
+}
+
+a,
+a:visited {
+    color: #2980b9;
+    text-decoration: none;
+    padding: 3px 1px;
+}
+
+#dbs span {
+    color: black;
+}
+
+#content table thead span,
+#content table thead a {
+    font-weight: bold;
+    color: #815e53;
+}
+
+#content table thead span {
+    background-color: #ffe1e8;
+}
+
+#content table thead a:hover {
+    background: none;
+    text-decoration: underline;
+    color: black;
+}
+
+pre.sqlarea {
+    background: white;
+}
+
+pre.sqlarea span,
+pre.sqlarea span {
+    font-family: Inconsolata, monospace;
+    font-size: 1.2em;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 1.9em;
+    font-weight: normal;
+    background: #fff;
+    color: #1e5eb6;
+    border-bottom: 1px solid rgb(85, 112, 139);
+    padding: 20px;
+    margin: 0;
+}
+
+#menu h1 {
+    padding: 0 0 5px 0;
+    background: none;
+}
+
+#menu p.links {
+    padding-left: 0
+}
+
+p#tables {
+    padding-left: 0
+}
+
+h2,
+h3 {
+    font-size: 1.7em;
+    font-weight: bold;
+    background: transparent;
+    color: #34495e;
+    border-bottom: 1px solid #c0c0c0;
+    padding: 10px 0;
+    margin: 0;
+}
+
+fieldset {
+    padding: 5px;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+}
+
+input {
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
+}
+
+input[type=submit] {
+    background-color: #ddf2ff;
+    border: 0 none;
+    border-radius: 2px 2px 2px 2px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 20px;
+    margin-bottom: 0;
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 10px;
+    padding: 5px 10px;
+    text-transform: none;
+    transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    background: none repeat scroll 0 0 #2DB6CF;
+    text-align: center;
+    /* DELETE WHEN WIDTH AUTO */
+}
+
+select {
+    padding: 7px 4px;
+    background-color: #fff;
+}
+
+input[type=submit]:hover {
+    background: none repeat scroll 0 0 #999;
+    color: #fff;
+}
+
+input[type=checkbox] {
+    margin-right: 5px;
+}
+
+input[type=image] {
+    border: 0
+}
+
+.icon {
+    padding: 0;
+    background-color: #797979;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    border: 1px solid #e5e5e5;
+    padding: 2px 5px;
+}
+
+code {
+    background: #f0ffe1;
+    border: 1px dashed #d5f1b9;
+    padding: 2px 4px;
+    font-family: "Monaco", "Courier New", monospace;
+}
+
+code a:hover {
+    background: transparent
+}
+
+table {
+    margin: 10px 0;
+    border: 1px solid #E6E6E6;
+    background-color: #fff;
+}
+
+tbody tr:hover td,
+tbody tr:hover th {
+    background: #edf4ff
+}
+
+thead th,
+thead td {
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    white-space: nowrap;
+    border-right: 1px solid #ffe1e8;
+    background: #ffe1e8;
+    color: #fff;
+    padding-right: 10px;
+}
+
+thead th acronym,
+thead td acronym,
+thead th sup,
+thead td sup {
+    color: #CCDDFF;
+}
+
+th,
+td {
+    border: 1px solid rgba(233, 233, 233, .3);
+    padding: 3px 6px;
+    vertical-align: top;
+}
+
+th a {
+    font-weight: bold;
+    padding-bottom: 0;
+    text-shadow: 1px 1px 1px #FFF;
+}
+
+th {
+    background: white;
+}
+
+tr.odd td {
+    background: #fcfaf5;
+}
+
+#content tbody tr.checked td,
+tr.checked.odd td {
+    background: #fbe2e2;
+    color: red;
+}
+
+.hidden {
+    display: none
+}
+
+.error,
+.message {
+    padding: 0;
+    background: transparent;
+    font-weight: bold
+}
+
+.error {
+    color: #c00
+}
+
+.message {
+    color: #090
+}
+
+#content {
+    margin: 0 0 0 320px;
+    padding: 50px 20px 40px 0;
+    height: 100%;
+}
+
+#lang {
+    background: #feffcc;
+    color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 1;
+}
+
+#lang select {
+    width: 178px;
+    padding: 5px 4px;
+}
+
+#breadcrumb {
+    position: fixed;
+    top: 0;
+    left: 300px;
+    background: #feffcc;
+    z-index: 2;
+    width: 100%;
+    color: #CD853F;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#breadcrumb a {
+    color: #CD853F;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#menu {
+    background: #ffe1e8;
+    position: fixed;
+    top: 0;
+    color: #FFF;
+    padding: 40px 20px 20px 20px;
+    bottom: 0;
+    overflow: auto;
+    left: 0;
+    width: 240px;
+    border-right: 2px solid #34495e;
+}
+
+#menu p {
+    border-bottom: 1px solid rgb(85, 112, 139);
+}
+
+#menu a {
+    color: #6a4739;
+}
+
+#schema .table {
+    padding: 5px;
+    background: #fcfaf5;
+    border: 1px solid #d0cdc4;
+}
+
+#schema .table b {
+    color: #006aeb;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#schema .table b:hover {
+    color: #fff;
+}
+
+input[name=logout] {
+    color: #fce2e2;
+    background: #d73e3e;
+}
+
+input[name=drop] {
+    background-color: #c0392b;
+}
+
+input[name=logout]:hover {
+    background: #ea0202;
+}
+
+#logins a,
+#tables a {
+    background: none;
+}
+
+#logins a:hover,
+#tables a:hover {}
+
+#logout {
+    color: #FFF;
+    text-decoration: none;
+    z-index: 2;
+}
+
+#logout:hover {
+    color: red;
+}
+
+.js .column {
+    background: #CD853F;
+}
+
+#content table thead a.text:hover {
+    text-decoration: none;
+}
+
+#version,
+.version {
+    font-size: 50%;
+}
+
+#h1:hover {
+    color: white;
+}
+
+input[type=submit]:active {
+    position: relative;
+    top: 1px;
+}
+
+table {
+    position: relative;
+}
+
+table:before,
+table:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width: 300px;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+
+table:after {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+}
+
+i {
+    font-style: italic;
+    color: gray;
+    font-size: 90%;
+    font-family: monospace;
+    border: 1px silver solid;
+}
+
+p#dbs select {
+    width: 100%;
+}
+
+p#dbs br {
+    display: none;
+}
+
+p#dbs {
+    color: white;
+    padding: 0;
+}
