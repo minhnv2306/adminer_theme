@@ -54,7 +54,7 @@ a:visited {
 }
 
 pre.sqlarea {
-    background: white;
+    background: #ddf2ff;
 }
 
 pre.sqlarea span,
@@ -204,7 +204,7 @@ thead td {
     white-space: nowrap;
     border-right: 1px solid #ffe1e8;
     background: #ffe1e8;
-    color: #fff;
+    color: #815e53;
     padding-right: 10px;
 }
 
